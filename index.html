@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family:"Inter" ;
+        src: url("fonts/Montserrat-VariableFont_wght.ttf");
+      }
+
+      @font-face {
+        font-family:"Notoserif" ;
+        src: url("fonts/NotoSerif-VariableFont_wdth\,wght.ttf");
+      }
+
+      body {
+        font-family: "Inter";
+      }
+
+      .col-12.p-4 {
+        background-color: #0A0F29;
+      }
+
+      .span {
+        color: #1DEA4A;
+      }
+
+      .container-fluid {
+        width: 100%;
+        height: 100vh;
+        background-image: url("Rectangle\ 76.png");
+        background-repeat: no-repeat;
+      }
+
+      .nav-item.white {
+        margin-left: cm;
+      }
+
+      .image {
+        margin-left: 170px;
+      }
+
+      .nav-item.white {
+        margin-left: 100px;
+      }
+
+      .h1.text-white {
+        margin-left: 35px;
+        margin-top: 50px;
+      }
+
+      .text-light.white {
+       margin-left: 35px;
+       margin-top: 20px;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .img2 {
+        margin-left: 280px;
+      }
+
+      .button {
+        background-color: #F7931A;
+        outline: none;
+        border: 0;
+        width: 200px;
+        height: 45px;
+        color: white;
+        border-radius: 20px;
+        margin-left: 35px;
+      }
+
+      .button2 {
+        background-color: #ffffff;
+        outline: none;
+        border: 0;
+        width: 200px;
+        height: 45px;
+        color: rgb(0, 0, 0);
+        border-radius: 20px;
+        margin-left: 20px;
+        margin-top: 50px;
+      }
+
+      .satauri {
+        text-align: center;
+        color: #2F66F6;
+        font-weight: 700;
+      }
+
+      .containerr {
+        width: 100%;
+        height: 100vh;
+      }
+
+      .ptag3 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 25px;
+        margin-top: 30px;
+      }
+
+      .spantag {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 43.2px;
+        text-align: left;
+        color: #2F66F6;
+      }
+
+      .ptg {
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 43.2px;
+        margin-left:10px ;
+        color: #2F66F6;
+        padding: 0;
+        margin: 0;
+      }
+
+      .div {
+        margin-left: 20px;
+      }
+
+      .container2 {
+        width: 100%;
+        height: 100vh;
+        font-family: "Inter";  
+      }
+
+      .container3 {
+        width:15cm ;
+        height: 60px;
+        background-color: #1DEA4A;
+        margin: auto;
+        display: flex;
+        justify-content: center; 
+        font-family: "Inter";      
+      }
+
+      .button1 {
+        width: 200px;
+        height: 79px;
+        border-radius: 10px ;
+        outline: none;
+        border: 0;
+        background-color: #098C26;
+        font-weight:500 ;
+        color: white;
+        margin-left: 100px;
+      }
+
+      .button4 {
+        width: 250px;
+        height: 80px;
+        border-radius: 10px ;
+        border: 2px ;
+        border: 2px solid #00000040;
+        background-image: url("Bitcoin.png");
+        background-repeat: no-repeat;
+        background-position:7px center;
+        background-size: 50px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+       font-family: "Inter";
+       box-shadow: 4px 10px 10px 10px #00000080;
+      }
+
+      .button3 {
+        width: 200px;
+        height: 79px;
+        font-weight:500 ;
+        border-radius: 10px;
+        border: 0;
+        outline: none;
+        background-color: red;
+        color: white;
+        margin-right: 100px;
+        
+      }
+
+      .space {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+
+      .box1 {
+        width: 370px;
+        height: 340px;
+        background-color: #FCC98A;
+        box-shadow: 0px 20px 10px 0px #00000080;
+        margin-left: 130px;
+       
+      }
+
+       .title {
+        font-family: "Notoserif";
+        text-align: center;
+        margin-top: 20px;
+        font-size: 30px;
+        color: #CD0000;
+      }
+
+      .ptag4 {
+        text-align: center;
+        font-weight: 600;
+        margin-top: 20px;
+        font-size: 52px;
+        color: #0A0F29;
+      }
+
+      .image1 {
+        margin-top: 140px;
+        margin-left: 30px;
+      }
+
+      .container4 {
+        background-color: #442b2b;
+        width: 95%;
+        height: 20cm;
+        margin-left: 35px;
+      }
+
+      .box2 {
+        width: 700px;
+        height: 100px;
+       border-radius: 10px ;
+       border: 1px 0px 0px 0px;
+       width: 700px;
+       border: 1px solid #00000040;
+       box-shadow: 0px 10px 10px 0px #00000080;
+       margin-left: 10px;
+       padding: 0;
+       background-image: url("Graph.png");
+       background-repeat: no-repeat;
+       background-position: center;
+       
+      }
+
+      .p1 {
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 48.76px;
+      margin-top: 27px;
+      }
+
+      .im1 {
+        margin-left: 17px;
+      }
+
+      .box3 {
+        width: 700px;
+        height: 100px;
+       border-radius: 10px ;
+       border: 1px 0px 0px 0px;
+       width: 700px;
+       border: 1px solid #00000040;
+       box-shadow: 0px 10px 10px 0px #00000080;
+       margin-left: 10px;
+       padding: 0;
+       background-image: url("Graph\ \(1\).png");
+       background-repeat: no-repeat;
+       background-position: center;
+      }
+
+      .p2 {
+        text-align: right;
+        font-size: 52px;
+        font-weight: 600;
+        line-height: 63.39px;
+        margin-right: 40px;
+        color: #9B9B9B;
+      }
+
+      .box5 {
+        width: 475px;
+        height: 300px;
+        background-color: #9AFFB080;
+        margin-left: 30cm;
+      }
+
+
+      
+
+      
+    
+      
+
+      
+    </style>
+</head>
+<body>
+   <div class="container-fluid">
+    <div class="row ">
+      <div class="col-12 p-4">
+      <div class="content justify-content-center">
+        <img src="Bitcoin.png">
+        <span class="fs-5 text-light">BTC</span>
+        <span class="text-light">&nbsp;&nbsp;&nbsp;$25,526.53</span>
+        <span class="span">&nbsp;&nbsp;+1.91%</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;<img src="Ethereum.png" width="40px">
+        <span class="fs-5 text-light">ETC</span>
+        <span class="text-light">&nbsp;&nbsp;&nbsp;1664.07</span>
+        <span class="span">&nbsp;&nbsp;+1.14%</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;<img src="BNB.png" width="40px">
+        <span class="fs-5 text-light">BNB</span>
+        <span class="text-light">&nbsp;&nbsp;&nbsp;$234.55</span>
+        <span class="span">&nbsp;&nbsp;+0.38%</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;<img src="Polygon.png" width="40px">
+        <span class="fs-5 text-light">MATIC</span>
+        <span class="text-light">&nbsp;&nbsp;&nbsp;$0.5715</span>
+        <span class="text-danger">&nbsp;&nbsp;-4.89%</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;<img src="Tether.png" width="40px">
+        <span class="fs-5 text-light">USDT</span>
+        <span class="text-light">&nbsp;&nbsp;$0.999</span>
+        <span class="span">+0.12%</span>
+        </div>
+      </div>
+      </div>
+
+      <!--navbar-->
+      
+      <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand text-white fs-4" href="#">&nbsp;&nbsp;Coin Dash</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white fs-5" aria-current="page" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trade</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whatchlist</a>
+            </li>
+           <div class="image"><img src="Separator.png"></div> 
+            <li class="nav-item white  ">
+              <a class="nav-link disabled text-white fs-5 " aria-disabled="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link disabled text-white fs-5" aria-disabled="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Profile</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link disabled text-white fs-5" aria-disabled="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav> 
+     <div class="flex">
+      <div class="box">
+        <h1 class="text-light white">First of its Kind Digital<br> Wallet</h1>
+        <p class="text-light white fs-4">Coin Dash is the first of its kind<br>
+           digital wallet that offers seamless<br> transactions at 0% transaction<br> fee.</p>  
+           <button class="button">GET STARTED</button>
+           <button class="button2">VIEW MARKET</button>
+          </div>
+      <img src="Coin Dash.png " class="img2" width="460px">
+    </div>
+ </div>
+ <br><br<br><br>
+ <!--Second page-->
+ <div class="containerr">
+  <h2 class="satauri">The Most Trusted Crypto Currency Trading Platform</h2>
+  <p class="ptag3 ">Your go-to platform for trusted and hassle-free<br> cryptocurrency transactions</p>
+  <div class="container ">
+    <div class="row">
+      <div class="col-4 bg-light bg-opacity-80 p-4">
+        <div class="content">
+          <div class="flex">
+          <img src="Security.png" width="90px" height="90px">
+      <div class="div">   
+          <p class="ptg">Security</p>
+          <p class="mt-2">Keep your digital assets<br> safe with our highly<br> secure storage system</p>
+        </div> 
+              </div> <!--flex-->
+        </div>
+      </div>
+
+      <div class="col-4 bg-light bg-opacity-80 p-4">
+        <div class="content">
+          <div class="flex">
+          <img src="Insurance.png" width="90px" height="90px">
+      <div class="div">   
+          <p class="ptg">Insurance</p>
+          <p class="mt-2">Enjoy the added layer<br> of protection with<br> insurance coverage for<br>
+             your valuable holdings.</p>
+        </div> 
+              </div> <!--flex-->
+        </div>
+      </div>
+
+      <div class="col-4 bg-light bg-opacity-80 p-4">
+        <div class="content">
+          <div class="flex">
+          <img src="Best Industry Practices.png" width="90px" height="90px">
+      <div class="div">   
+          <p class="ptg">Best Industry Practices</p>
+          <p class="mt-2">Embracing the best<br> industry practices to<br> safeguard your <br>
+            investments and privacy</p>
+        </div> 
+              </div> <!--flex-->
+        </div>
+      </div>
+    </div>  
+  </div>
+
+  <br><br><br>
+  <div class="container2 bg-light bg-opacity-100 " >
+       <div class="fs-1 text-center  ">MARKET MOVERS</div>
+       <div class="space" >
+      <button class="button1">BUY</button>
+      <button class="button4">&nbsp;&nbsp;&nbsp;&nbsp;BITCOIN</button>
+      <button class="button3 ">SELL</button>
+  </div>
+<br><br>
+
+  <div class="container">
+    
+    
+    <h1 class="h11">About</h1>
+    <br>
+    <div class="flex">
+    <p class="fw-bold">Bitcoin is a decentralized cryptocurrency originally described in a 2008<br>
+       whitepaper by a person, or group of people, using the alias Satoshi<br>
+        Nakamoto. It was launched soon after, in January 2009.<br>
+        <br> Bitcoin is a peer-to-peer online currency, meaning that all transactions<br>
+         happen directly between equal, independent network participants,<br>
+          without the need for any intermediary to permit or facilitate them. Bitcoin<br>
+           was created, according to Nakamoto’s own words, to allow “online<br>
+            payments to be sent directly from one party to another without going<br>
+             through a financial institution.”<br><br> Some concepts for a similar type of a decentralized
+             electronic currency<br> precede BTC, but Bitcoin holds the distinction of being the first-ever<br>
+              cryptocurrency to come into actual use.
+              <a href="#" class="link-item link-underline link-underline-opacity-0">Read more.</a></p>
+
+           <div class="box1">
+             <div class="title">Current Holdings</div>
+             <p class="ptag4">Bitcoin</p>
+             <p class="number text-center mt-4 fs-3">$1275.48</p>
+             <p class="number2 text-center mt-4 fs-4 text-success">+3.05%</p>
+           </div>
+          <span class="image1"> <img src="Arrow.png" width="35px" height="50px"></span>
+  </div>
+
+</div><!--flex-->
+
+
+<br><br><br>
+<div class="container4">
+<h1 class="text-primary text-center">Watchlist</h1>
+<p class="fs-2 ms-5 mt-4">All Watchlist&nbsp;&nbsp;<img src="Arrow 1.png"></p>
+ <div class="flex">
+<p class="p1">1.</p>
+<div class="box2 ms-3">
+  <br>
+  
+  <div class="im1"><img src="Bitcoin.png ">
+  <span class="fs-4 fw-bold">BTC</span>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bitcoin</p></div>
+  <span class="fw-bold">$25,526.53</span>
+    <p class="text-success">+1.91%</p>
+  
+</div><!--box2-->
+</div><!--flex-->
+<br>
+<div class="flex">
+  <p class="p1">2.</p>
+  <div class="box2">
+  <br>
+  <div class="im1"><img src="Ethereum.png">
+    <span class="fs-4 fw-bold">ETH</span>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Etherium</p></div>
+    
+  </div><!--box2-->
+  </div><!--flex-->
+
+  <br>
+<div class="flex">
+  <p class="p1">3.</p>
+  <div class="box2">
+    <br>
+    <div class="im1"><img src="BNB.png">
+      <span class="fs-4 fw-bold">BNB</span>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Binance coin</p></div>
+  </div><!--box2-->
+  </div><!--flex-->
+
+  <br>
+<div class="flex">
+  <p class="p1">4.</p>
+  <div class="box3">
+    <br>
+    <div class="im1"><img src="Polygon.png">
+      <span class="fs-4 fw-bold">MATIC</span>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Polygon</p></div>
+  </div><!--box2-->
+  </div><!--flex-->
+
+  <br>
+<div class="flex">
+  <p class="p1">5.</p>
+  <div class="box2">
+    <br>
+    <div class="im1"><img src="Tether.png">
+      <span class="fs-4 fw-bold">USDT</span>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tether coin</p></div>
+      
+  </div><!--box2-->
+  </div><!--flex-->
+  <span class="p2">Add Coin</span>
+</div><!--container4-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+</div>
+</div>
+   
+</body>
+</html>
